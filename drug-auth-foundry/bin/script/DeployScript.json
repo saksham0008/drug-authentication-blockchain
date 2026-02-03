@@ -1,0 +1,429 @@
+{
+    "contractName": "DeployScript",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "IS_SCRIPT",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "run",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "setUp",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"IS_SCRIPT\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"run\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"setUp\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/ADMIN/Foundry/drug-auth-foundry/script/Deploy.s.sol\":\"DeployScript\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/Base.sol\":{\"keccak256\":\"0x5ebf7cff3b5eda65103d6de4e8659430a74038367332898736bd54c1f89e0b24\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6d8c3a55de619a7a1ad78f132aabe259d5ba71ea7ebb48735ee41b0a2e6bfeea\",\"dweb:/ipfs/QmdRVMsbttJspRMjkNAX4fofzdrgznFXAhG1cWdrDxh43W\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/Script.sol\":{\"keccak256\":\"0xc91379bc30766b1b43adc28e36ce6ad184052cdc39be78748e75fcadfbd4432b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d77a0335d2f0f41442634d97a403ca4b102cc4d34e09e662711a1da3b65669a5\",\"dweb:/ipfs/Qmahpz4GJyHeY85BD4rMTYrNyyv5PdYDFu5BCgdzXgaQWQ\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/StdChains.sol\":{\"keccak256\":\"0xb20ceb4143471b7bc922ae005be2840b3306014e4c3fff91a2a6e01386f843c4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2e63a21567d96f763ee995490b0b19fb91e8ba50ffe1187a7dff37db917df8dc\",\"dweb:/ipfs/QmTkwz2nrMz11MiNuW55e1bUvrVrSy8XFkUVxdm4wFUC6o\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/StdCheats.sol\":{\"keccak256\":\"0xc07512583c2c35867f7d285e756b16c9418b2e2d409a299fb14037a1441c8290\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4f877d15669c4440e60cd7c7e948f0722f0178a943b59d9bbda7f7eff35a8767\",\"dweb:/ipfs/QmdPgU93R3f1cUypjPgrKFJMySMH73hn7hHhKn5J49u1NW\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/StdConstants.sol\":{\"keccak256\":\"0x2de7cc713a244d8f4f1cea1983df9ba736878b4c50570a04c8a7ade4898dd6e0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://020a6d5092f8b570786823b3bb204cfc0f2f6b1a3a00fd74fee823a16a7a524f\",\"dweb:/ipfs/QmbvJkS5a8oFKzdbteBJbnDYj67bNEiPB6uD4vSmMxYnXE\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/StdJson.sol\":{\"keccak256\":\"0x79db6ab921ed14c3cf3608576cb1f0b6347dae60c4236a87292983d2aed93b0f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0e857b386ced4067734051512b272862686aa38202a8a7801937388bc3b591b1\",\"dweb:/ipfs/QmeNRLRXnTH5GcjrJ6TBtegnCc9wHZ7kSzMfDmBo6dF9aF\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/StdMath.sol\":{\"keccak256\":\"0x2937c68a288dbb54c9bb4209119817ea197ffbed21167c493f14dcbbc327c399\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a222d841d2d7e9bb92cf1fb0018a2b8f56d7829a7cab0dba8aa1ca6e7ef693a8\",\"dweb:/ipfs/QmUvKzRrjPthS5m4rKrs7zGq38xgjWRrQpKMLQJrHkAgX6\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/StdStorage.sol\":{\"keccak256\":\"0x629521c5fc837a5108c3921efe5f0e95af3ea11e1f7ee6868d9bf5e86938f81f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0c437f2174f1b572f8edc28b4f1048561b99c3b5a8a8f13ab344ce5dc559d80a\",\"dweb:/ipfs/QmRPgLAeGPNGKZMZ1HogsKF72vmtSkseSq5QJcs8L2FkiS\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/StdStyle.sol\":{\"keccak256\":\"0xe3e5d092bfcad345b1c25ea431473039295fbd9efde2b702881f1f4edc2c1417\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://89b16a8e997a1bed9ffb113924222d521542b1bc13b475763d8a8b890a27cd8a\",\"dweb:/ipfs/QmXeeuDTgjBYWgun7EiQgUJZF9JVKdARNM8qobLHdG9r4Q\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/StdUtils.sol\":{\"keccak256\":\"0xe039b32762ebd22e37d965366e3591ed2a028d3fb23e9959fb42c0cf2a4ddf5a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0eeecef1ecb8c25112fbc9ce86e04781ad82df491ba4f598be2b8f0c9885c819\",\"dweb:/ipfs/QmbmVpQTAWCC6dy8GuKGg1qdWKoeMfqbcCDv59JnhPGwjy\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/Vm.sol\":{\"keccak256\":\"0x02e79b96af7e706fde505b118dfe19b2fdabf3f3171d479c4207076eac9493a2\",\"license\":\"MIT OR Apache-2.0\",\"urls\":[\"bzz-raw://864d0b290eb8620e68a77e42c64993a9a6060e0cce63f363ba1159d1dac7cc24\",\"dweb:/ipfs/QmXP9pPPEZd3ZQPP5WXnD4hAA1i2vWPkmVwckZjB75shUg\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/console.sol\":{\"keccak256\":\"0xe3a5b7058d5752c36d2b15c0a1c16f6e95275eab8b3846aa0e90850e0597d577\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://946323b2e53e9c2c150b7ca125bb0e5a5cc4837b1efe56e5ded67bea19f684d6\",\"dweb:/ipfs/Qmaan797WKYbdjYAiqdrpwHGQdFKvHAuraFhUiyZ5BjqcN\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/console2.sol\":{\"keccak256\":\"0x925cc44754abdbec4f1bdb5d7679cccaf6880743266deba83c2dd02ccd007e2a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b421871d73f02673696d5849ffcc0080c10960573b373a335abc325ff9b2a72d\",\"dweb:/ipfs/QmQKqnWKiN8Kiiz6LnXGwhd2G9mYajE8fe7R7RErh97swT\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/interfaces/IMulticall3.sol\":{\"keccak256\":\"0x1313e079d13b9f3a47177eff1d226c41b0b51c0802c248d47d038eb65a084307\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2b51e2203055cda450dc04ce55644f209f67e208fc143a1f118cff66de010f20\",\"dweb:/ipfs/QmVtQjmG6YnHaDt81TvJM74TvzEh3SULR3HyzxVQFM59xZ\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/safeconsole.sol\":{\"keccak256\":\"0x6a9316ec41296d09809d5cc56fb466de61b75d4d932396f425085836bfced22a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7bf941bce12e8e0fa5e7ebae89af3827e7c3c32900e1ce535e6fe228db7ed3b8\",\"dweb:/ipfs/QmYkpTZXx3CdiMCoKmbc6SoLGJxadvaiRn46wkg9ofuxNn\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/script/Deploy.s.sol\":{\"keccak256\":\"0xfbc00b27bf6c2444e8134a93604f47c0825e8b82a09331a516633c00fe226bd9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6bf21eb7483ddb85212cd7eb28efbfcae008b15b0cf1cabf244d7154f61a285e\",\"dweb:/ipfs/QmXCR1UVHfRuemfkmAWVW6gGTdJ3NDNvY3UjiN3vs2pqUS\"]},\"c:/Users/ADMIN/Foundry/drug-auth-foundry/src/DrugAuth.sol\":{\"keccak256\":\"0x3abc7d9004b5588d27bc54c9b736d3333b84b2e1cb436dcc60101c7f7a79ece6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://35a726ebf1da53ef416b23c94efd88c1ed4bd9d836738fd8179488e9ed6df952\",\"dweb:/ipfs/QmXh9jVmV5rYqdWJRrVTC3zeJeE4d1m8MNi2Mk9gjKTxsU\"]}},\"version\":1}",
+    "bytecode": "608080604052346026576201000162ff00ff19600c541617600c556109ae908161002b8239f35b5f80fdfe6080806040526004361015610012575f80fd5b5f905f3560e01c9081630a9254e4146101a7578163c040622614610067575063f8ccbf471461003f575f80fd5b34610064578060031936011261006457602060ff600c5460101c166040519015158152f35b80fd5b9050346101a3575f3660031901126101a357737109709ecfa91a80626ff3989d68f67f5b1dd12d3b156101a357637fb5297f60e01b81525f8160048183737109709ecfa91a80626ff3989d68f67f5b1dd12d5af1801561019857610185575b506040516107898082019082821067ffffffffffffffff831117610171579082916101f08339039082f01561016557737109709ecfa91a80626ff3989d68f67f5b1dd12d3b1561006457604051633b756e9b60e11b81528190818160048183737109709ecfa91a80626ff3989d68f67f5b1dd12d5af1801561015a576101495750f35b81610153916101b9565b6100645780f35b6040513d84823e3d90fd5b604051903d90823e3d90fd5b634e487b7160e01b84526041600452602484fd5b61019191505f906101b9565b5f5f6100c6565b6040513d5f823e3d90fd5b5f80fd5b346101a3575f3660031901126101a357005b90601f8019910116810190811067ffffffffffffffff8211176101db57604052565b634e487b7160e01b5f52604160045260245ffdfe608080604052346026575f80546001600160a01b0319163317905561075e908161002b8239f35b5f80fdfe60806040526004361015610011575f80fd5b5f3560e01c806306fdde031461051e5780633b7b0a74146104c15780638da5cb5b1461049a578063b009493d146103e6578063b79befff146100cd5763fc0e4e2f1461005b575f80fd5b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c957602080610090600493369085016105bd565b6100a460018060a01b035f541633146106eb565b604051928184925191829101835e60019082019081520301902001805460ff19169055005b5f80fd5b346100c95760803660031901126100c95760043567ffffffffffffffff81116100c9576100fe9036906004016105bd565b60243567ffffffffffffffff81116100c95761011e9036906004016105bd565b61013260018060a01b035f541633146106eb565b6040519160a0830183811067ffffffffffffffff821117610314576040528252602082019181835260408101604435815260608201906064358252602080608085019560018752604051928184925191829101835e81016001815203019020925180519067ffffffffffffffff82116103145781906101b18654610613565b601f8111610396575b50602090601f8311600114610333575f92610328575b50508160011b915f199060031b1c19161783555b60018301945194855167ffffffffffffffff8111610314576102068254610613565b601f81116102cf575b506020601f821160011461026a578190600497985f9261025f575b50508160011b915f199060031b1c19161790555b516002830155516003820155019051151560ff801983541691161790555f80f35b01519050888061022a565b601f19821697835f52815f20985f5b8181106102b7575091600498999184600195941061029f575b505050811b01905561023e565b01515f1960f88460031b161c19169055888080610292565b838301518b556001909a019960209384019301610279565b825f5260205f20601f830160051c8101916020841061030a575b601f0160051c01905b8181106102ff575061020f565b5f81556001016102f2565b90915081906102e9565b634e487b7160e01b5f52604160045260245ffd5b0151905087806101d0565b5f8781528281209350601f198516905b81811061037e5750908460019594939210610366575b505050811b0183556101e4565b01515f1960f88460031b161c19169055878080610359565b92936020600181928786015181550195019301610343565b909150855f5260205f20601f840160051c810191602085106103dc575b90601f859493920160051c01905b8181106103ce57506101ba565b5f81558493506001016103c1565b90915081906103b3565b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c95760208061041d6104769336906004016105bd565b604051928184925191829101835e8101600181520301902061043e8161064b565b9061044b6001820161064b565b60028201549161048460ff60046003840154930154169260405196879660a0885260a0880190610577565b908682036020880152610577565b9260408501526060840152151560808301520390f35b346100c9575f3660031901126100c9575f546040516001600160a01b039091168152602090f35b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c95760ff60046020806104f98195369085016105bd565b604051928184925191829101835e810160018152030190200154166040519015158152f35b346100c9575f3660031901126100c95761057360405161053f60408261059b565b601381527222393ab39020baba3432b73a34b1b0ba34b7b760691b6020820152604051918291602083526020830190610577565b0390f35b805180835260209291819084018484015e5f828201840152601f01601f1916010190565b90601f8019910116810190811067ffffffffffffffff82111761031457604052565b81601f820112156100c95780359067ffffffffffffffff821161031457604051926105f2601f8401601f19166020018561059b565b828452602083830101116100c957815f926020809301838601378301015290565b90600182811c92168015610641575b602083101461062d57565b634e487b7160e01b5f52602260045260245ffd5b91607f1691610622565b9060405191825f82549261065e84610613565b80845293600181169081156106c95750600114610685575b506106839250038361059b565b565b90505f9291925260205f20905f915b8183106106ad575050906020610683928201015f610676565b6020919350806001915483858901015201910190918492610694565b90506020925061068394915060ff191682840152151560051b8201015f610676565b156106f257565b60405162461bcd60e51b815260206004820152600e60248201526d139bdd08185d5d1a1bdc9a5e995960921b6044820152606490fdfea2646970667358221220c94d10fbfa954ef20d85172f9c625eef8b7c144e9dcd15976b25ccb4398492a764736f6c634300081e0033a2646970667358221220e8da0375f1898bc6383aea6d152cab408bedaaaa59914039d055b077a243531464736f6c634300081e0033",
+    "deployedBytecode": "6080806040526004361015610012575f80fd5b5f905f3560e01c9081630a9254e4146101a7578163c040622614610067575063f8ccbf471461003f575f80fd5b34610064578060031936011261006457602060ff600c5460101c166040519015158152f35b80fd5b9050346101a3575f3660031901126101a357737109709ecfa91a80626ff3989d68f67f5b1dd12d3b156101a357637fb5297f60e01b81525f8160048183737109709ecfa91a80626ff3989d68f67f5b1dd12d5af1801561019857610185575b506040516107898082019082821067ffffffffffffffff831117610171579082916101f08339039082f01561016557737109709ecfa91a80626ff3989d68f67f5b1dd12d3b1561006457604051633b756e9b60e11b81528190818160048183737109709ecfa91a80626ff3989d68f67f5b1dd12d5af1801561015a576101495750f35b81610153916101b9565b6100645780f35b6040513d84823e3d90fd5b604051903d90823e3d90fd5b634e487b7160e01b84526041600452602484fd5b61019191505f906101b9565b5f5f6100c6565b6040513d5f823e3d90fd5b5f80fd5b346101a3575f3660031901126101a357005b90601f8019910116810190811067ffffffffffffffff8211176101db57604052565b634e487b7160e01b5f52604160045260245ffdfe608080604052346026575f80546001600160a01b0319163317905561075e908161002b8239f35b5f80fdfe60806040526004361015610011575f80fd5b5f3560e01c806306fdde031461051e5780633b7b0a74146104c15780638da5cb5b1461049a578063b009493d146103e6578063b79befff146100cd5763fc0e4e2f1461005b575f80fd5b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c957602080610090600493369085016105bd565b6100a460018060a01b035f541633146106eb565b604051928184925191829101835e60019082019081520301902001805460ff19169055005b5f80fd5b346100c95760803660031901126100c95760043567ffffffffffffffff81116100c9576100fe9036906004016105bd565b60243567ffffffffffffffff81116100c95761011e9036906004016105bd565b61013260018060a01b035f541633146106eb565b6040519160a0830183811067ffffffffffffffff821117610314576040528252602082019181835260408101604435815260608201906064358252602080608085019560018752604051928184925191829101835e81016001815203019020925180519067ffffffffffffffff82116103145781906101b18654610613565b601f8111610396575b50602090601f8311600114610333575f92610328575b50508160011b915f199060031b1c19161783555b60018301945194855167ffffffffffffffff8111610314576102068254610613565b601f81116102cf575b506020601f821160011461026a578190600497985f9261025f575b50508160011b915f199060031b1c19161790555b516002830155516003820155019051151560ff801983541691161790555f80f35b01519050888061022a565b601f19821697835f52815f20985f5b8181106102b7575091600498999184600195941061029f575b505050811b01905561023e565b01515f1960f88460031b161c19169055888080610292565b838301518b556001909a019960209384019301610279565b825f5260205f20601f830160051c8101916020841061030a575b601f0160051c01905b8181106102ff575061020f565b5f81556001016102f2565b90915081906102e9565b634e487b7160e01b5f52604160045260245ffd5b0151905087806101d0565b5f8781528281209350601f198516905b81811061037e5750908460019594939210610366575b505050811b0183556101e4565b01515f1960f88460031b161c19169055878080610359565b92936020600181928786015181550195019301610343565b909150855f5260205f20601f840160051c810191602085106103dc575b90601f859493920160051c01905b8181106103ce57506101ba565b5f81558493506001016103c1565b90915081906103b3565b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c95760208061041d6104769336906004016105bd565b604051928184925191829101835e8101600181520301902061043e8161064b565b9061044b6001820161064b565b60028201549161048460ff60046003840154930154169260405196879660a0885260a0880190610577565b908682036020880152610577565b9260408501526060840152151560808301520390f35b346100c9575f3660031901126100c9575f546040516001600160a01b039091168152602090f35b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c95760ff60046020806104f98195369085016105bd565b604051928184925191829101835e810160018152030190200154166040519015158152f35b346100c9575f3660031901126100c95761057360405161053f60408261059b565b601381527222393ab39020baba3432b73a34b1b0ba34b7b760691b6020820152604051918291602083526020830190610577565b0390f35b805180835260209291819084018484015e5f828201840152601f01601f1916010190565b90601f8019910116810190811067ffffffffffffffff82111761031457604052565b81601f820112156100c95780359067ffffffffffffffff821161031457604051926105f2601f8401601f19166020018561059b565b828452602083830101116100c957815f926020809301838601378301015290565b90600182811c92168015610641575b602083101461062d57565b634e487b7160e01b5f52602260045260245ffd5b91607f1691610622565b9060405191825f82549261065e84610613565b80845293600181169081156106c95750600114610685575b506106839250038361059b565b565b90505f9291925260205f20905f915b8183106106ad575050906020610683928201015f610676565b6020919350806001915483858901015201910190918492610694565b90506020925061068394915060ff191682840152151560051b8201015f610676565b156106f257565b60405162461bcd60e51b815260206004820152600e60248201526d139bdd08185d5d1a1bdc9a5e995960921b6044820152606490fdfea2646970667358221220c94d10fbfa954ef20d85172f9c625eef8b7c144e9dcd15976b25ccb4398492a764736f6c634300081e0033a2646970667358221220e8da0375f1898bc6383aea6d152cab408bedaaaa59914039d055b077a243531464736f6c634300081e0033",
+    "sourceMap": "175:190:15:-:0;;;;;;;;;;3231:4:2;175:190:15;;;3231:4:2;175:190:15;;;;;;;;;;;",
+    "deployedSourceMap": "175:190:15:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;875:28:1;175:190:15;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;175:190:15;;;;345:42:0;281:19:15;;;;-1:-1:-1;;;281:19:15;;175:190;281:19;175:190;281:19;175:190;345:42:0;281:19:15;;;;;;;;175:190;;;;311:14;;;;;;;;;;;;;;;;;;;;;;;;;;;345:42:0;336:18:15;;;;175:190;;-1:-1:-1;;;336:18:15;;175:190;;;;;;;345:42:0;336:18:15;;;;;;;;175:190;;336:18;;;;;:::i;:::-;175:190;;336:18;175:190;336:18;175:190;;2057:14:0;175:190:15;;2057:14:0;;;;311::15;175:190;;2057:14:0;;;;;;;;311::15;-1:-1:-1;;;2057:14:0;;;175:190:15;2057:14:0;;;;281:19:15;;;;175:190;281:19;;:::i;:::-;175:190;281:19;;;;175:190;;2057:14:0;175:190:15;2057:14:0;;;;;281:19:15;175:190;;;;;;;;;-1:-1:-1;;175:190:15;;;;;2057:14:0;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;-1:-1:-1;2057:14:0;;;;;-1:-1:-1;2057:14:0",
+    "sourcePath": "c:/Users/ADMIN/Foundry/drug-auth-foundry/script/Deploy.s.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.30+commit.73712a01"
+    },
+    "ast": {
+        "absolutePath": "c:/Users/ADMIN/Foundry/drug-auth-foundry/script/Deploy.s.sol",
+        "exportedSymbols": {
+            "DeployScript": [
+                35410
+            ],
+            "DrugAuth": [
+                35514
+            ],
+            "Script": [
+                100
+            ],
+            "ScriptBase": [
+                59
+            ],
+            "StdChains": [
+                1062
+            ],
+            "StdCheatsSafe": [
+                3152
+            ],
+            "StdConstants": [
+                3988
+            ],
+            "StdStorage": [
+                5112
+            ],
+            "StdStyle": [
+                8280
+            ],
+            "StdUtils": [
+                9007
+            ],
+            "VmSafe": [
+                12951
+            ],
+            "console": [
+                22138
+            ],
+            "console2": [
+                22138
+            ],
+            "safeconsole": [
+                35380
+            ],
+            "stdJson": [
+                4932
+            ],
+            "stdMath": [
+                5074
+            ],
+            "stdStorageSafe": [
+                6464
+            ]
+        },
+        "id": 35411,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 35382,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".19"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:24:15"
+            },
+            {
+                "absolutePath": "c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/Script.sol",
+                "file": "c:/Users/ADMIN/Foundry/drug-auth-foundry/lib/forge-std/src/Script.sol",
+                "id": 35383,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 35411,
+                "sourceUnit": 101,
+                "src": "61:79:15",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "c:/Users/ADMIN/Foundry/drug-auth-foundry/src/DrugAuth.sol",
+                "file": "../src/DrugAuth.sol",
+                "id": 35384,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 35411,
+                "sourceUnit": 35515,
+                "src": "142:29:15",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "baseName": {
+                            "id": 35385,
+                            "name": "Script",
+                            "nameLocations": [
+                                "200:6:15"
+                            ],
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 100,
+                            "src": "200:6:15"
+                        },
+                        "id": 35386,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "200:6:15"
+                    }
+                ],
+                "canonicalName": "DeployScript",
+                "contractDependencies": [
+                    35514
+                ],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 35410,
+                "linearizedBaseContracts": [
+                    35410,
+                    100,
+                    9007,
+                    3152,
+                    1062,
+                    59,
+                    47
+                ],
+                "name": "DeployScript",
+                "nameLocation": "184:12:15",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 35389,
+                            "nodeType": "Block",
+                            "src": "238:2:15",
+                            "statements": []
+                        },
+                        "functionSelector": "0a9254e4",
+                        "id": 35390,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "setUp",
+                        "nameLocation": "223:5:15",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 35387,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "228:2:15"
+                        },
+                        "returnParameters": {
+                            "id": 35388,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "238:0:15"
+                        },
+                        "scope": 35410,
+                        "src": "214:26:15",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 35408,
+                            "nodeType": "Block",
+                            "src": "270:92:15",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [],
+                                        "expression": {
+                                            "argumentTypes": [],
+                                            "expression": {
+                                                "id": 35393,
+                                                "name": "vm",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 43,
+                                                "src": "281:2:15",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_Vm_$14022",
+                                                    "typeString": "contract Vm"
+                                                }
+                                            },
+                                            "id": 35395,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberLocation": "284:14:15",
+                                            "memberName": "startBroadcast",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 11027,
+                                            "src": "281:17:15",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                                                "typeString": "function () external"
+                                            }
+                                        },
+                                        "id": 35396,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "281:19:15",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 35397,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "281:19:15"
+                                },
+                                {
+                                    "expression": {
+                                        "arguments": [],
+                                        "expression": {
+                                            "argumentTypes": [],
+                                            "id": 35400,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "nodeType": "NewExpression",
+                                            "src": "311:12:15",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_DrugAuth_$35514_$",
+                                                "typeString": "function () returns (contract DrugAuth)"
+                                            },
+                                            "typeName": {
+                                                "id": 35399,
+                                                "nodeType": "UserDefinedTypeName",
+                                                "pathNode": {
+                                                    "id": 35398,
+                                                    "name": "DrugAuth",
+                                                    "nameLocations": [
+                                                        "315:8:15"
+                                                    ],
+                                                    "nodeType": "IdentifierPath",
+                                                    "referencedDeclaration": 35514,
+                                                    "src": "315:8:15"
+                                                },
+                                                "referencedDeclaration": 35514,
+                                                "src": "315:8:15",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_DrugAuth_$35514",
+                                                    "typeString": "contract DrugAuth"
+                                                }
+                                            }
+                                        },
+                                        "id": 35401,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "311:14:15",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_DrugAuth_$35514",
+                                            "typeString": "contract DrugAuth"
+                                        }
+                                    },
+                                    "id": 35402,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "311:14:15"
+                                },
+                                {
+                                    "expression": {
+                                        "arguments": [],
+                                        "expression": {
+                                            "argumentTypes": [],
+                                            "expression": {
+                                                "id": 35403,
+                                                "name": "vm",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 43,
+                                                "src": "336:2:15",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_Vm_$14022",
+                                                    "typeString": "contract Vm"
+                                                }
+                                            },
+                                            "id": 35405,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberLocation": "339:13:15",
+                                            "memberName": "stopBroadcast",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 11043,
+                                            "src": "336:16:15",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                                                "typeString": "function () external"
+                                            }
+                                        },
+                                        "id": 35406,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "336:18:15",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 35407,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "336:18:15"
+                                }
+                            ]
+                        },
+                        "functionSelector": "c0406226",
+                        "id": 35409,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "run",
+                        "nameLocation": "257:3:15",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 35391,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "260:2:15"
+                        },
+                        "returnParameters": {
+                            "id": 35392,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "270:0:15"
+                        },
+                        "scope": 35410,
+                        "src": "248:114:15",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 35411,
+                "src": "175:190:15",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "33:334:15"
+    },
+    "functionHashes": {
+        "IS_SCRIPT()": "f8ccbf47",
+        "run()": "c0406226",
+        "setUp()": "0a9254e4"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "495600",
+            "executionCost": "24759",
+            "totalCost": "520359"
+        },
+        "external": {
+            "IS_SCRIPT()": "2321",
+            "run()": "infinite",
+            "setUp()": "138"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_id", "type": "string" },
+      { "internalType": "string", "name": "_name", "type": "string" },
+      { "internalType": "uint256", "name": "_mfg", "type": "uint256" },
+      { "internalType": "uint256", "name": "_exp", "type": "uint256" }
+    ],
+    "name": "addDrug",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "name": "drugs",
+    "outputs": [
+      { "internalType": "string", "name": "name", "type": "string" },
+      { "internalType": "string", "name": "id", "type": "string" },
+      { "internalType": "uint256", "name": "mfgDate", "type": "uint256" },
+      { "internalType": "uint256", "name": "expDate", "type": "uint256" },
+      { "internalType": "bool", "name": "valid", "type": "bool" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "_id", "type": "string" }],
+    "name": "invalidateDrug",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "name",
+    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "string", "name": "_id", "type": "string" }],
+    "name": "verifyDrug",
+    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  }
+]

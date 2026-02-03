@@ -1,0 +1,1425 @@
+{
+    "contractName": "DrugAuth",
+    "abi": [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_name",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_batchId",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_manufactureDate",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_expiryDate",
+                    "type": "uint256"
+                }
+            ],
+            "name": "addDrug",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "name": "drugs",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "batchId",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "manufactureDate",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "expiryDate",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isAuthentic",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_batchId",
+                    "type": "string"
+                }
+            ],
+            "name": "invalidateDrug",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "name",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_batchId",
+                    "type": "string"
+                }
+            ],
+            "name": "verifyDrug",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_batchId\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"_manufactureDate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_expiryDate\",\"type\":\"uint256\"}],\"name\":\"addDrug\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"drugs\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"batchId\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"manufactureDate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"expiryDate\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"isAuthentic\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_batchId\",\"type\":\"string\"}],\"name\":\"invalidateDrug\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_batchId\",\"type\":\"string\"}],\"name\":\"verifyDrug\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/ADMIN/Foundry/drug-auth-foundry/src/DrugAuth.sol\":\"DrugAuth\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"c:/Users/ADMIN/Foundry/drug-auth-foundry/src/DrugAuth.sol\":{\"keccak256\":\"0x3abc7d9004b5588d27bc54c9b736d3333b84b2e1cb436dcc60101c7f7a79ece6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://35a726ebf1da53ef416b23c94efd88c1ed4bd9d836738fd8179488e9ed6df952\",\"dweb:/ipfs/QmXh9jVmV5rYqdWJRrVTC3zeJeE4d1m8MNi2Mk9gjKTxsU\"]}},\"version\":1}",
+    "bytecode": "608080604052346026575f80546001600160a01b0319163317905561075e908161002b8239f35b5f80fdfe60806040526004361015610011575f80fd5b5f3560e01c806306fdde031461051e5780633b7b0a74146104c15780638da5cb5b1461049a578063b009493d146103e6578063b79befff146100cd5763fc0e4e2f1461005b575f80fd5b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c957602080610090600493369085016105bd565b6100a460018060a01b035f541633146106eb565b604051928184925191829101835e60019082019081520301902001805460ff19169055005b5f80fd5b346100c95760803660031901126100c95760043567ffffffffffffffff81116100c9576100fe9036906004016105bd565b60243567ffffffffffffffff81116100c95761011e9036906004016105bd565b61013260018060a01b035f541633146106eb565b6040519160a0830183811067ffffffffffffffff821117610314576040528252602082019181835260408101604435815260608201906064358252602080608085019560018752604051928184925191829101835e81016001815203019020925180519067ffffffffffffffff82116103145781906101b18654610613565b601f8111610396575b50602090601f8311600114610333575f92610328575b50508160011b915f199060031b1c19161783555b60018301945194855167ffffffffffffffff8111610314576102068254610613565b601f81116102cf575b506020601f821160011461026a578190600497985f9261025f575b50508160011b915f199060031b1c19161790555b516002830155516003820155019051151560ff801983541691161790555f80f35b01519050888061022a565b601f19821697835f52815f20985f5b8181106102b7575091600498999184600195941061029f575b505050811b01905561023e565b01515f1960f88460031b161c19169055888080610292565b838301518b556001909a019960209384019301610279565b825f5260205f20601f830160051c8101916020841061030a575b601f0160051c01905b8181106102ff575061020f565b5f81556001016102f2565b90915081906102e9565b634e487b7160e01b5f52604160045260245ffd5b0151905087806101d0565b5f8781528281209350601f198516905b81811061037e5750908460019594939210610366575b505050811b0183556101e4565b01515f1960f88460031b161c19169055878080610359565b92936020600181928786015181550195019301610343565b909150855f5260205f20601f840160051c810191602085106103dc575b90601f859493920160051c01905b8181106103ce57506101ba565b5f81558493506001016103c1565b90915081906103b3565b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c95760208061041d6104769336906004016105bd565b604051928184925191829101835e8101600181520301902061043e8161064b565b9061044b6001820161064b565b60028201549161048460ff60046003840154930154169260405196879660a0885260a0880190610577565b908682036020880152610577565b9260408501526060840152151560808301520390f35b346100c9575f3660031901126100c9575f546040516001600160a01b039091168152602090f35b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c95760ff60046020806104f98195369085016105bd565b604051928184925191829101835e810160018152030190200154166040519015158152f35b346100c9575f3660031901126100c95761057360405161053f60408261059b565b601381527222393ab39020baba3432b73a34b1b0ba34b7b760691b6020820152604051918291602083526020830190610577565b0390f35b805180835260209291819084018484015e5f828201840152601f01601f1916010190565b90601f8019910116810190811067ffffffffffffffff82111761031457604052565b81601f820112156100c95780359067ffffffffffffffff821161031457604051926105f2601f8401601f19166020018561059b565b828452602083830101116100c957815f926020809301838601378301015290565b90600182811c92168015610641575b602083101461062d57565b634e487b7160e01b5f52602260045260245ffd5b91607f1691610622565b9060405191825f82549261065e84610613565b80845293600181169081156106c95750600114610685575b506106839250038361059b565b565b90505f9291925260205f20905f915b8183106106ad575050906020610683928201015f610676565b6020919350806001915483858901015201910190918492610694565b90506020925061068394915060ff191682840152151560051b8201015f610676565b156106f257565b60405162461bcd60e51b815260206004820152600e60248201526d139bdd08185d5d1a1bdc9a5e995960921b6044820152606490fdfea2646970667358221220c94d10fbfa954ef20d85172f9c625eef8b7c144e9dcd15976b25ccb4398492a764736f6c634300081e0033",
+    "deployedBytecode": "60806040526004361015610011575f80fd5b5f3560e01c806306fdde031461051e5780633b7b0a74146104c15780638da5cb5b1461049a578063b009493d146103e6578063b79befff146100cd5763fc0e4e2f1461005b575f80fd5b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c957602080610090600493369085016105bd565b6100a460018060a01b035f541633146106eb565b604051928184925191829101835e60019082019081520301902001805460ff19169055005b5f80fd5b346100c95760803660031901126100c95760043567ffffffffffffffff81116100c9576100fe9036906004016105bd565b60243567ffffffffffffffff81116100c95761011e9036906004016105bd565b61013260018060a01b035f541633146106eb565b6040519160a0830183811067ffffffffffffffff821117610314576040528252602082019181835260408101604435815260608201906064358252602080608085019560018752604051928184925191829101835e81016001815203019020925180519067ffffffffffffffff82116103145781906101b18654610613565b601f8111610396575b50602090601f8311600114610333575f92610328575b50508160011b915f199060031b1c19161783555b60018301945194855167ffffffffffffffff8111610314576102068254610613565b601f81116102cf575b506020601f821160011461026a578190600497985f9261025f575b50508160011b915f199060031b1c19161790555b516002830155516003820155019051151560ff801983541691161790555f80f35b01519050888061022a565b601f19821697835f52815f20985f5b8181106102b7575091600498999184600195941061029f575b505050811b01905561023e565b01515f1960f88460031b161c19169055888080610292565b838301518b556001909a019960209384019301610279565b825f5260205f20601f830160051c8101916020841061030a575b601f0160051c01905b8181106102ff575061020f565b5f81556001016102f2565b90915081906102e9565b634e487b7160e01b5f52604160045260245ffd5b0151905087806101d0565b5f8781528281209350601f198516905b81811061037e5750908460019594939210610366575b505050811b0183556101e4565b01515f1960f88460031b161c19169055878080610359565b92936020600181928786015181550195019301610343565b909150855f5260205f20601f840160051c810191602085106103dc575b90601f859493920160051c01905b8181106103ce57506101ba565b5f81558493506001016103c1565b90915081906103b3565b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c95760208061041d6104769336906004016105bd565b604051928184925191829101835e8101600181520301902061043e8161064b565b9061044b6001820161064b565b60028201549161048460ff60046003840154930154169260405196879660a0885260a0880190610577565b908682036020880152610577565b9260408501526060840152151560808301520390f35b346100c9575f3660031901126100c9575f546040516001600160a01b039091168152602090f35b346100c95760203660031901126100c95760043567ffffffffffffffff81116100c95760ff60046020806104f98195369085016105bd565b604051928184925191829101835e810160018152030190200154166040519015158152f35b346100c9575f3660031901126100c95761057360405161053f60408261059b565b601381527222393ab39020baba3432b73a34b1b0ba34b7b760691b6020820152604051918291602083526020830190610577565b0390f35b805180835260209291819084018484015e5f828201840152601f01601f1916010190565b90601f8019910116810190811067ffffffffffffffff82111761031457604052565b81601f820112156100c95780359067ffffffffffffffff821161031457604051926105f2601f8401601f19166020018561059b565b828452602083830101116100c957815f926020809301838601378301015290565b90600182811c92168015610641575b602083101461062d57565b634e487b7160e01b5f52602260045260245ffd5b91607f1691610622565b9060405191825f82549261065e84610613565b80845293600181169081156106c95750600114610685575b506106839250038361059b565b565b90505f9291925260205f20905f915b8183106106ad575050906020610683928201015f610676565b6020919350806001915483858901015201910190918492610694565b90506020925061068394915060ff191682840152151560051b8201015f610676565b156106f257565b60405162461bcd60e51b815260206004820152600e60248201526d139bdd08185d5d1a1bdc9a5e995960921b6044820152606490fdfea2646970667358221220c94d10fbfa954ef20d85172f9c625eef8b7c144e9dcd15976b25ccb4398492a764736f6c634300081e0033",
+    "sourceMap": "61:1054:16:-:0;;;;;;;456:18;61:1054;;-1:-1:-1;;;;;;61:1054:16;464:10;61:1054;;;;;;;;;;;;;",
+    "deployedSourceMap": "61:1054:16:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;61:1054:16;;;;;;;;;;;;;;;;;;;;;:::i;:::-;357:46;61:1054;;;;;;;;365:10;:19;357:46;:::i;:::-;61:1054;;;;;;;;;;;;;970:5;61:1054;;;;;;;;;;970:27;61:1054;;-1:-1:-1;;61:1054:16;;;;;;;;;;;;;;-1:-1:-1;;61:1054:16;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;:::i;:::-;357:46;61:1054;;;;;;;;365:10;:19;357:46;:::i;:::-;61:1054;;;;;;;;;;;;;;;;;;;;688:58;;61:1054;;;;;688:58;;61:1054;;;;;688:58;;61:1054;;;;;;688:58;61:1054;688:58;;61:1054;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;61:1054:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;61:1054:16;;;;;;;;;;;;;;;;;;;;-1:-1:-1;61:1054:16;;;;;;;;;;;;;-1:-1:-1;;;61:1054:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;61:1054:16;;;;;;;-1:-1:-1;61:1054:16;;;;;;;;;;-1:-1:-1;;61:1054:16;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;280:36;61:1054;;;;;;280:36;;;:::i;:::-;;;;;;;:::i;:::-;;;;61:1054;280:36;61:1054;;;280:36;;;61:1054;280:36;;61:1054;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;61:1054:16;;;;;;;;-1:-1:-1;;;;;61:1054:16;;;;;;;;;;;;;;-1:-1:-1;;61:1054:16;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;851:5;61:1054;;;;;;851:27;61:1054;;;;;;;;;;;;;;;;-1:-1:-1;;61:1054:16;;;;;;;;;;;:::i;:::-;;;;-1:-1:-1;;;61:1054:16;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;61:1054:16;;;;;;;;-1:-1:-1;;61:1054:16;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;61:1054:16;;;;;:::i;:::-;;;;;;;;;;;;;-1:-1:-1;61:1054:16;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;61:1054:16;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;:::o;:::-;;;-1:-1:-1;61:1054:16;;;;;-1:-1:-1;61:1054:16;;-1:-1:-1;61:1054:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;-1:-1:-1;;;61:1054:16;;;;;;;;;;;;-1:-1:-1;;;61:1054:16;;;;;;",
+    "sourcePath": "c:/Users/ADMIN/Foundry/drug-auth-foundry/src/DrugAuth.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.30+commit.73712a01"
+    },
+    "ast": {
+        "absolutePath": "c:/Users/ADMIN/Foundry/drug-auth-foundry/src/DrugAuth.sol",
+        "exportedSymbols": {
+            "DrugAuth": [
+                35514
+            ]
+        },
+        "id": 35515,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 35412,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".19"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:24:16"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "DrugAuth",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 35514,
+                "linearizedBaseContracts": [
+                    35514
+                ],
+                "name": "DrugAuth",
+                "nameLocation": "70:8:16",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "functionSelector": "8da5cb5b",
+                        "id": 35414,
+                        "mutability": "mutable",
+                        "name": "owner",
+                        "nameLocation": "101:5:16",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 35514,
+                        "src": "86:20:16",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                        },
+                        "typeName": {
+                            "id": 35413,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "86:7:16",
+                            "stateMutability": "nonpayable",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "DrugAuth.Drug",
+                        "id": 35425,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 35416,
+                                "mutability": "mutable",
+                                "name": "name",
+                                "nameLocation": "145:4:16",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 35425,
+                                "src": "138:11:16",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 35415,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "138:6:16",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 35418,
+                                "mutability": "mutable",
+                                "name": "batchId",
+                                "nameLocation": "167:7:16",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 35425,
+                                "src": "160:14:16",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 35417,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "160:6:16",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 35420,
+                                "mutability": "mutable",
+                                "name": "manufactureDate",
+                                "nameLocation": "193:15:16",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 35425,
+                                "src": "185:23:16",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 35419,
+                                    "name": "uint256",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "185:7:16",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 35422,
+                                "mutability": "mutable",
+                                "name": "expiryDate",
+                                "nameLocation": "227:10:16",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 35425,
+                                "src": "219:18:16",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 35421,
+                                    "name": "uint256",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "219:7:16",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 35424,
+                                "mutability": "mutable",
+                                "name": "isAuthentic",
+                                "nameLocation": "253:11:16",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 35425,
+                                "src": "248:16:16",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_bool",
+                                    "typeString": "bool"
+                                },
+                                "typeName": {
+                                    "id": 35423,
+                                    "name": "bool",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "248:4:16",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    }
+                                },
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "Drug",
+                        "nameLocation": "122:4:16",
+                        "nodeType": "StructDefinition",
+                        "scope": 35514,
+                        "src": "115:157:16",
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "b009493d",
+                        "id": 35430,
+                        "mutability": "mutable",
+                        "name": "drugs",
+                        "nameLocation": "311:5:16",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 35514,
+                        "src": "280:36:16",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Drug_$35425_storage_$",
+                            "typeString": "mapping(string => struct DrugAuth.Drug)"
+                        },
+                        "typeName": {
+                            "id": 35429,
+                            "keyName": "",
+                            "keyNameLocation": "-1:-1:-1",
+                            "keyType": {
+                                "id": 35426,
+                                "name": "string",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "288:6:16",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "280:23:16",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Drug_$35425_storage_$",
+                                "typeString": "mapping(string => struct DrugAuth.Drug)"
+                            },
+                            "valueName": "",
+                            "valueNameLocation": "-1:-1:-1",
+                            "valueType": {
+                                "id": 35428,
+                                "nodeType": "UserDefinedTypeName",
+                                "pathNode": {
+                                    "id": 35427,
+                                    "name": "Drug",
+                                    "nameLocations": [
+                                        "298:4:16"
+                                    ],
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 35425,
+                                    "src": "298:4:16"
+                                },
+                                "referencedDeclaration": 35425,
+                                "src": "298:4:16",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Drug_$35425_storage_ptr",
+                                    "typeString": "struct DrugAuth.Drug"
+                                }
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 35441,
+                            "nodeType": "Block",
+                            "src": "346:77:16",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "commonType": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                },
+                                                "id": 35436,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "expression": {
+                                                        "id": 35433,
+                                                        "name": "msg",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 4294967281,
+                                                        "src": "365:3:16",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_magic_message",
+                                                            "typeString": "msg"
+                                                        }
+                                                    },
+                                                    "id": 35434,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberLocation": "369:6:16",
+                                                    "memberName": "sender",
+                                                    "nodeType": "MemberAccess",
+                                                    "src": "365:10:16",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": "==",
+                                                "rightExpression": {
+                                                    "id": 35435,
+                                                    "name": "owner",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 35414,
+                                                    "src": "379:5:16",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "src": "365:19:16",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            {
+                                                "hexValue": "4e6f7420617574686f72697a6564",
+                                                "id": 35437,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "386:16:16",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_fac3bac318c0d00994f57b0f2f4c643c313072b71db2302bf4b900309cc50b36",
+                                                    "typeString": "literal_string \"Not authorized\""
+                                                },
+                                                "value": "Not authorized"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_fac3bac318c0d00994f57b0f2f4c643c313072b71db2302bf4b900309cc50b36",
+                                                    "typeString": "literal_string \"Not authorized\""
+                                                }
+                                            ],
+                                            "id": 35432,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                4294967278,
+                                                4294967278,
+                                                4294967278
+                                            ],
+                                            "referencedDeclaration": 4294967278,
+                                            "src": "357:7:16",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                                                "typeString": "function (bool,string memory) pure"
+                                            }
+                                        },
+                                        "id": 35438,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "357:46:16",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 35439,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "357:46:16"
+                                },
+                                {
+                                    "id": 35440,
+                                    "nodeType": "PlaceholderStatement",
+                                    "src": "414:1:16"
+                                }
+                            ]
+                        },
+                        "id": 35442,
+                        "name": "onlyOwner",
+                        "nameLocation": "334:9:16",
+                        "nodeType": "ModifierDefinition",
+                        "parameters": {
+                            "id": 35431,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "343:2:16"
+                        },
+                        "src": "325:98:16",
+                        "virtual": false,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 35450,
+                            "nodeType": "Block",
+                            "src": "445:37:16",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 35448,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 35445,
+                                            "name": "owner",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 35414,
+                                            "src": "456:5:16",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "expression": {
+                                                "id": 35446,
+                                                "name": "msg",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 4294967281,
+                                                "src": "464:3:16",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_magic_message",
+                                                    "typeString": "msg"
+                                                }
+                                            },
+                                            "id": 35447,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberLocation": "468:6:16",
+                                            "memberName": "sender",
+                                            "nodeType": "MemberAccess",
+                                            "src": "464:10:16",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            }
+                                        },
+                                        "src": "456:18:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "id": 35449,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "456:18:16"
+                                }
+                            ]
+                        },
+                        "id": 35451,
+                        "implemented": true,
+                        "kind": "constructor",
+                        "modifiers": [],
+                        "name": "",
+                        "nameLocation": "-1:-1:-1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 35443,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "442:2:16"
+                        },
+                        "returnParameters": {
+                            "id": 35444,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "445:0:16"
+                        },
+                        "scope": 35514,
+                        "src": "431:51:16",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 35476,
+                            "nodeType": "Block",
+                            "src": "659:95:16",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 35474,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "baseExpression": {
+                                                "id": 35464,
+                                                "name": "drugs",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 35430,
+                                                "src": "670:5:16",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Drug_$35425_storage_$",
+                                                    "typeString": "mapping(string memory => struct DrugAuth.Drug storage ref)"
+                                                }
+                                            },
+                                            "id": 35466,
+                                            "indexExpression": {
+                                                "id": 35465,
+                                                "name": "_batchId",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 35455,
+                                                "src": "676:8:16",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "670:15:16",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Drug_$35425_storage",
+                                                "typeString": "struct DrugAuth.Drug storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "arguments": [
+                                                {
+                                                    "id": 35468,
+                                                    "name": "_name",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 35453,
+                                                    "src": "693:5:16",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 35469,
+                                                    "name": "_batchId",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 35455,
+                                                    "src": "700:8:16",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 35470,
+                                                    "name": "_manufactureDate",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 35457,
+                                                    "src": "710:16:16",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 35471,
+                                                    "name": "_expiryDate",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 35459,
+                                                    "src": "728:11:16",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                {
+                                                    "hexValue": "74727565",
+                                                    "id": 35472,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "bool",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "741:4:16",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    },
+                                                    "value": "true"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    }
+                                                ],
+                                                "id": 35467,
+                                                "name": "Drug",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 35425,
+                                                "src": "688:4:16",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_struct$_Drug_$35425_storage_ptr_$",
+                                                    "typeString": "type(struct DrugAuth.Drug storage pointer)"
+                                                }
+                                            },
+                                            "id": 35473,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "structConstructorCall",
+                                            "lValueRequested": false,
+                                            "nameLocations": [],
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "688:58:16",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Drug_$35425_memory_ptr",
+                                                "typeString": "struct DrugAuth.Drug memory"
+                                            }
+                                        },
+                                        "src": "670:76:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Drug_$35425_storage",
+                                            "typeString": "struct DrugAuth.Drug storage ref"
+                                        }
+                                    },
+                                    "id": 35475,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "670:76:16"
+                                }
+                            ]
+                        },
+                        "functionSelector": "b79befff",
+                        "id": 35477,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [
+                            {
+                                "id": 35462,
+                                "kind": "modifierInvocation",
+                                "modifierName": {
+                                    "id": 35461,
+                                    "name": "onlyOwner",
+                                    "nameLocations": [
+                                        "649:9:16"
+                                    ],
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 35442,
+                                    "src": "649:9:16"
+                                },
+                                "nodeType": "ModifierInvocation",
+                                "src": "649:9:16"
+                            }
+                        ],
+                        "name": "addDrug",
+                        "nameLocation": "499:7:16",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 35460,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 35453,
+                                    "mutability": "mutable",
+                                    "name": "_name",
+                                    "nameLocation": "531:5:16",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 35477,
+                                    "src": "517:19:16",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 35452,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "517:6:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 35455,
+                                    "mutability": "mutable",
+                                    "name": "_batchId",
+                                    "nameLocation": "561:8:16",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 35477,
+                                    "src": "547:22:16",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 35454,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "547:6:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 35457,
+                                    "mutability": "mutable",
+                                    "name": "_manufactureDate",
+                                    "nameLocation": "588:16:16",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 35477,
+                                    "src": "580:24:16",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 35456,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "580:7:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 35459,
+                                    "mutability": "mutable",
+                                    "name": "_expiryDate",
+                                    "nameLocation": "623:11:16",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 35477,
+                                    "src": "615:19:16",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 35458,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "615:7:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "506:135:16"
+                        },
+                        "returnParameters": {
+                            "id": 35463,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "659:0:16"
+                        },
+                        "scope": 35514,
+                        "src": "490:264:16",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 35489,
+                            "nodeType": "Block",
+                            "src": "833:53:16",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "expression": {
+                                            "baseExpression": {
+                                                "id": 35484,
+                                                "name": "drugs",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 35430,
+                                                "src": "851:5:16",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Drug_$35425_storage_$",
+                                                    "typeString": "mapping(string memory => struct DrugAuth.Drug storage ref)"
+                                                }
+                                            },
+                                            "id": 35486,
+                                            "indexExpression": {
+                                                "id": 35485,
+                                                "name": "_batchId",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 35479,
+                                                "src": "857:8:16",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_memory_ptr",
+                                                    "typeString": "string memory"
+                                                }
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "nodeType": "IndexAccess",
+                                            "src": "851:15:16",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Drug_$35425_storage",
+                                                "typeString": "struct DrugAuth.Drug storage ref"
+                                            }
+                                        },
+                                        "id": 35487,
+                                        "isConstant": false,
+                                        "isLValue": true,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "memberLocation": "867:11:16",
+                                        "memberName": "isAuthentic",
+                                        "nodeType": "MemberAccess",
+                                        "referencedDeclaration": 35424,
+                                        "src": "851:27:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "functionReturnParameters": 35483,
+                                    "id": 35488,
+                                    "nodeType": "Return",
+                                    "src": "844:34:16"
+                                }
+                            ]
+                        },
+                        "functionSelector": "3b7b0a74",
+                        "id": 35490,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "verifyDrug",
+                        "nameLocation": "771:10:16",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 35480,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 35479,
+                                    "mutability": "mutable",
+                                    "name": "_batchId",
+                                    "nameLocation": "796:8:16",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 35490,
+                                    "src": "782:22:16",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 35478,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "782:6:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "781:24:16"
+                        },
+                        "returnParameters": {
+                            "id": 35483,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 35482,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 35490,
+                                    "src": "827:4:16",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "typeName": {
+                                        "id": 35481,
+                                        "name": "bool",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "827:4:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "826:6:16"
+                        },
+                        "scope": 35514,
+                        "src": "762:124:16",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 35504,
+                            "nodeType": "Block",
+                            "src": "959:54:16",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 35502,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "expression": {
+                                                "baseExpression": {
+                                                    "id": 35497,
+                                                    "name": "drugs",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 35430,
+                                                    "src": "970:5:16",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_struct$_Drug_$35425_storage_$",
+                                                        "typeString": "mapping(string memory => struct DrugAuth.Drug storage ref)"
+                                                    }
+                                                },
+                                                "id": 35499,
+                                                "indexExpression": {
+                                                    "id": 35498,
+                                                    "name": "_batchId",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 35492,
+                                                    "src": "976:8:16",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "IndexAccess",
+                                                "src": "970:15:16",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Drug_$35425_storage",
+                                                    "typeString": "struct DrugAuth.Drug storage ref"
+                                                }
+                                            },
+                                            "id": 35500,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberLocation": "986:11:16",
+                                            "memberName": "isAuthentic",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 35424,
+                                            "src": "970:27:16",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "hexValue": "66616c7365",
+                                            "id": 35501,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "bool",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "1000:5:16",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            },
+                                            "value": "false"
+                                        },
+                                        "src": "970:35:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "id": 35503,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "970:35:16"
+                                }
+                            ]
+                        },
+                        "functionSelector": "fc0e4e2f",
+                        "id": 35505,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [
+                            {
+                                "id": 35495,
+                                "kind": "modifierInvocation",
+                                "modifierName": {
+                                    "id": 35494,
+                                    "name": "onlyOwner",
+                                    "nameLocations": [
+                                        "949:9:16"
+                                    ],
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 35442,
+                                    "src": "949:9:16"
+                                },
+                                "nodeType": "ModifierInvocation",
+                                "src": "949:9:16"
+                            }
+                        ],
+                        "name": "invalidateDrug",
+                        "nameLocation": "903:14:16",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 35493,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 35492,
+                                    "mutability": "mutable",
+                                    "name": "_batchId",
+                                    "nameLocation": "932:8:16",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 35505,
+                                    "src": "918:22:16",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 35491,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "918:6:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "917:24:16"
+                        },
+                        "returnParameters": {
+                            "id": 35496,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "959:0:16"
+                        },
+                        "scope": 35514,
+                        "src": "894:119:16",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 35512,
+                            "nodeType": "Block",
+                            "src": "1071:39:16",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "hexValue": "447275672041757468656e7469636174696f6e",
+                                        "id": 35510,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "string",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "1085:21:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_stringliteral_2d8297414a342c0489047e6aff4a9bc3db83f26f8a1f830e3ce8350ba115dbb0",
+                                            "typeString": "literal_string \"Drug Authentication\""
+                                        },
+                                        "value": "Drug Authentication"
+                                    },
+                                    "functionReturnParameters": 35509,
+                                    "id": 35511,
+                                    "nodeType": "Return",
+                                    "src": "1078:28:16"
+                                }
+                            ]
+                        },
+                        "functionSelector": "06fdde03",
+                        "id": 35513,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "name",
+                        "nameLocation": "1028:4:16",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 35506,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1032:2:16"
+                        },
+                        "returnParameters": {
+                            "id": 35509,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 35508,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 35513,
+                                    "src": "1056:13:16",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 35507,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1056:6:16",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1055:15:16"
+                        },
+                        "scope": 35514,
+                        "src": "1019:91:16",
+                        "stateMutability": "pure",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 35515,
+                "src": "61:1054:16",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "33:1084:16"
+    },
+    "functionHashes": {
+        "addDrug(string,string,uint256,uint256)": "b79befff",
+        "drugs(string)": "b009493d",
+        "invalidateDrug(string)": "fc0e4e2f",
+        "name()": "06fdde03",
+        "owner()": "8da5cb5b",
+        "verifyDrug(string)": "3b7b0a74"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "377200",
+            "executionCost": "24652",
+            "totalCost": "401852"
+        },
+        "external": {
+            "addDrug(string,string,uint256,uint256)": "infinite",
+            "drugs(string)": "infinite",
+            "invalidateDrug(string)": "infinite",
+            "name()": "436",
+            "owner()": "2315",
+            "verifyDrug(string)": "infinite"
+        }
+    }
+}
