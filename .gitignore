@@ -1,0 +1,8 @@
+bin/
+out/
+cache/
+*.solc-output.json
+node_modules/
+.env
+.DS_Store
+Thumbs.db
