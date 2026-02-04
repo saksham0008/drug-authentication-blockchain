@@ -1,8 +1,17 @@
+# Foundry build artifacts
 bin/
 out/
 cache/
+
+# Large compiler outputs
 *.solc-output.json
+
+# Node / frontend (if added later)
 node_modules/
+
+# Environment variables
 .env
+
+# OS files
 .DS_Store
 Thumbs.db
