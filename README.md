@@ -1,21 +1,21 @@
-# 💊 Drug Authentication & Anti-Counterfeiting System (Blockchain)
+# Drug Authentication & Anti-Counterfeiting System (Blockchain)
 
-🚀 A full-stack blockchain-based system to verify the authenticity of pharmaceutical drugs and prevent counterfeiting using QR verification and smart contracts.
-
----
-
-## 🔥 Latest Update (v2.0 – March 2026)
-
-* ✅ QR Code Generation & Mobile Scan Verification
-* ✅ Blockchain-based Drug Tracking
-* ✅ Dashboard (Safe / Expired Drug Monitoring)
-* ✅ Dark Mode UI
-* ✅ Improved User Interface & Experience
-* ✅ Real-time Drug Status Detection
+A full-stack blockchain-based system to verify the authenticity of pharmaceutical drugs and prevent counterfeiting using QR verification and smart contracts.
 
 ---
 
-## 🧠 Problem Statement
+## Latest Update (v2.0 – March 2026)
+
+* QR Code Generation & Mobile Scan Verification
+* Blockchain-based Drug Tracking
+* Dashboard (Safe / Expired Drug Monitoring)
+* Dark Mode UI
+* Improved User Interface & Experience
+* Real-time Drug Status Detection
+
+---
+
+## Problem Statement
 
 Counterfeit medicines are a serious global issue that cause health risks, financial losses, and loss of trust in healthcare systems.
 
@@ -23,7 +23,7 @@ Traditional supply chains lack transparency and are prone to tampering and data 
 
 ---
 
-## 💡 Proposed Solution
+## Proposed Solution
 
 This project uses blockchain technology to:
 
@@ -34,9 +34,9 @@ This project uses blockchain technology to:
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🔗 Blockchain Layer
+### Blockchain Layer
 
 * Manufacturer registration
 * Drug batch creation
@@ -44,14 +44,14 @@ This project uses blockchain technology to:
 * Immutable on-chain records
 * Role-based access control
 
-### 🌐 Backend (Node.js)
+### Backend (Node.js)
 
 * API for drug creation & retrieval
 * QR code generation
 * Drug verification endpoint
 * AI-like rule-based risk detection
 
-### 💻 Frontend (React)
+### Frontend (React)
 
 * Create & fetch drug records
 * Generate QR codes
@@ -62,7 +62,7 @@ This project uses blockchain technology to:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Blockchain:** Solidity, Foundry
 * **Frontend:** React.js
@@ -72,7 +72,7 @@ This project uses blockchain technology to:
 
 ---
 
-## 📱 How It Works
+## How It Works
 
 1. Create drug on blockchain
 2. Generate QR code
@@ -82,7 +82,7 @@ This project uses blockchain technology to:
 
 ---
 
-## ⚙️ Project Structure
+## Project Structure
 
 ```
 drug-authentication-blockchain/
@@ -97,9 +97,9 @@ drug-authentication-blockchain/
 
 ---
 
-## ▶️ Setup & Run (Local)
+## Setup & Run (Local)
 
-### 🔹 Backend
+### Backend
 
 ```
 cd backend
@@ -107,7 +107,7 @@ npm install
 node server.js
 ```
 
-### 🔹 Frontend
+### Frontend
 
 ```
 cd frontend
@@ -115,7 +115,7 @@ npm install
 npm start
 ```
 
-### 🔹 Blockchain (Foundry)
+### Blockchain (Foundry)
 
 ```
 forge install
@@ -125,7 +125,7 @@ forge test
 
 ---
 
-## 📊 Use Cases
+## Use Cases
 
 * Pharmaceutical manufacturers
 * Distributors & logistics partners
@@ -135,7 +135,7 @@ forge test
 
 ---
 
-## 🤖 AI Component
+## AI Component
 
 The system uses a **rule-based decision mechanism** to determine:
 
@@ -143,11 +143,11 @@ The system uses a **rule-based decision mechanism** to determine:
 * High-risk drugs
 * Authentic drugs
 
-👉 Future scope includes integrating machine learning models for predictive risk analysis.
+Future scope includes integrating machine learning models for predictive risk analysis.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Machine Learning-based risk prediction
 * IPFS storage for drug metadata
@@ -157,13 +157,13 @@ The system uses a **rule-based decision mechanism** to determine:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Saksham Gupta**
-🔗 GitHub: https://github.com/saksham0008
+GitHub: https://github.com/saksham0008
 
 ---
 
-## 📜 License
+## License
 
 MIT License
